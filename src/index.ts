@@ -17,7 +17,7 @@ async function main() {
 
 	try {
 		console.log("cloning some repo");
-		await execa("git", ["clone", "git@github.com:Andersgee/pkg-demo.git", "some-project-name"]);
+		await execa("git", ["clone", "git@github.com:Andersgee/pkg-demo.git", projectName]);
 
 		await execa("rm", ["-rf", ".git"], { cwd: projectDir });
 		await execa("git", ["init"], { cwd: projectDir });

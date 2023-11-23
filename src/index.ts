@@ -13,7 +13,7 @@ async function initGit(opts: IContext) {
 */
 
 async function main() {
-	const { stdout } = await execa("echo", ["hello from create-template-demo"]);
+	const { stdout } = await execa("echo", ["simple echo from create-template-demo"]);
 	console.log(stdout);
 }
 

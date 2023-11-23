@@ -17,7 +17,9 @@
 		"url": "https://github.com/andersgee/create-template-demo"
 	},
 	"scripts": {
+		"start": "node dist/index.js",
 		"build": "rm -rf ./dist && tsc",
+		"bs": "pnpm build && pnpm start",
 		"release": "pnpm run build && changeset publish",
 		"lint": "eslint src --ext .ts"
 	},
